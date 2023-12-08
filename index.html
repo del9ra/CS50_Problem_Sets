@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            //call js later from the part below this js
+            document.addEventListener('DOMContentLoaded', function() {
+                let sixbutton = document.querySelector('#sixpeople');
+                        document.querySelector('#sixpeople').addEventListener('click', function() {
+                            sixbutton.style.backgroundColor = 'red';
+                        document.querySelector("#result1").innerHTML = "Incorrect";
+                });
+                let threebutton = document.querySelector('#threepeople');
+                    document.querySelector('#threepeople').addEventListener('click', function() {
+                        threebutton.style.backgroundColor = 'green';
+                     document.querySelector("#result1").innerHTML = "Correct";
+                });
+                let one1button = document.querySelector('#oneperone');
+                        document.querySelector('#oneperone').addEventListener('click', function() {
+                            one1button.style.backgroundColor = 'red';
+                        document.querySelector("#result1").innerHTML = "Incorrect";
+                });
+                let one3button = document.querySelector('#oneperthree');
+                    document.querySelector('#oneperthree').addEventListener('click', function() {
+                        one3button.style.backgroundColor = 'red';
+                    document.querySelector("#result1").innerHTML = "Incorrect";
+                });
+                let one6button = document.querySelector('#onepersix');
+                    document.querySelector('#onepersix').addEventListener('click', function() {
+                        one6button.style.backgroundColor = 'red';
+                    document.querySelector("#result1").innerHTML = "Incorrect";
+                });
+
+                document.querySelector('#check').addEventListener('click', function() {
+                    let input = document.querySelector('input');
+                        if(input.value == 'Switzerland'){
+                            input.style.backgroundColor = 'green';
+                            document.querySelector("#result2").innerHTML = 'Correct';
+                        }
+
+                        else {
+                            input.style.backgroundColor = 'red';
+                            document.querySelector("#result2").innerHTML = 'Incorrect';
+                                    }
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand?<h/3>
+                    <br>
+                    <button id="sixpeople">
+                        6 people per 1 sheep
+                    </button>
+                    <button id="threepeople">
+                        3 people per 1 sheep
+                    </button>
+                    <button id="oneperone">
+                        1 person per 1 sheep
+                    </button>
+                    <button id="oneperthree">
+                        1 person per 3 sheep
+                    </button>
+                    <button id="onepersix">
+                        1 person per 6 sheep
+                    </button>
+                    <p id="result1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which country is it illegal to own only one guinea pig, as a lone guinea pig might get lonely?</h3>
+
+                    <input autofocus id="question" type="text"></input>
+                    <button id="check">Check Answer</button>
+                    <p id="result2"></p>
+            </div>
+        </div>
+    </body>
+</html>

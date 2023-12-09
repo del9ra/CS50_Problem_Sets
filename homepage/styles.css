@@ -1,0 +1,46 @@
+/* add comments to css. creating classes to address them later in html code */
+body {
+    background-image: url('https://images.freecreatives.com/wp-content/uploads/2016/04/Awesome-Website-Background1.jpg');
+    }
+
+
+  .icon-bar {
+      display: flex;
+      align-items: center;
+      position: fixed;
+      top: 30px;
+      right: 15px;
+    }
+
+    .icon-bar a {
+      margin-right: 15px;
+      color: #000000;
+      font-size: 30px;
+    }
+    p {
+        font: large sans serif;
+      }
+
+
+    .left {
+        text-align: center;
+    }
+    .small {
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     color: black;
+     text-align: center;
+  }
+  .joinme {
+      text-align: center;
+  }
+
+  .youvid {
+      margin-left: 60px;
+  }
+  .col-4 {
+      color: brown;
+      text-align: left;
+  }
